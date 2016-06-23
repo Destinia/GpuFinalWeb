@@ -19,7 +19,7 @@
 	<div id="supportingText">
 		<div id="explanation">
 		<h3><span>Abstract and Proposal</span></h3>
-		<p class="p1"><span></span></p>
+		<p class="p1"><span>This project revise original as rigid as possible CPU code to GPU code. There are two main objectives. The first one is to parallize counting constraint and reduce time consuming. The second one is to port data on GPU in order to reduce data transfer at the following steps. We revise click point to setup constraint part and drag point to deform part. Set up constraint part has obvious time delay for about 200 points picture because of inverse matrix and some for loop calculation. We use gaussion-jordan method to parallize inverse matrix transform. Though In drag point to deform part, original CPU code is about real time, we still transfer this part to GPU code for following steps. The outcome is faster than CPU code but the effect is not obvious.</span></p>
         <a href="https://www.youtube.com/watch?v=ceGGGlcTThg">Proposal Video</a><br>
         <a href="https://www.youtube.com/watch?v=7b9aAk2UsXE">Demo Video</a> 
 		</div>
